@@ -1,0 +1,1611 @@
+{
+  "name": "pack",
+  "type": "toeic-part6",
+  "human_id": "325736,325738,325740,325742",
+  "preview": "The long-awaited Pawnsville Cultural Center will be opening this March. The center was initially proposed 5 years ago by members of the city council and promises to be _______ a tourist attraction and somewhere to showcase local artistic talent. \n\nThe center will include two theaters as well as three exhibition halls. The grand opening will be held in the main exhibition hall and will _______ the artwork of renowned local artist Philippe Lacoste.\n\nGuests to the opening event will include other local artists and musicians as well as three special guest speakers set to lecture about the significance of conserving and sustaining the arts. The main exhibition hall boasts an _______ 500 seats and beautiful classical architecture.\n\nTo buy tickets for the event, head to the center’s Web site at www.pawnsarthall.org. _______.",
+  "questions": [
+    {
+      "id": 6565,
+      "pack_type": "toeic-part6",
+      "passage_box_id": 34150,
+      "raw_fbid": "http://santa/question/325736",
+      "correct_answer": "a",
+      "order": 0,
+      "pack_id": 5088,
+      "view_tree": {
+        "name": "root",
+        "children": [
+          {
+            "name": "blank",
+            "children": [
+              {
+                "name": "chunk_ref",
+                "type": "text_en",
+                "chunk_id": 631166,
+                "children": [
+                  {
+                    "name": "segment",
+                    "data": {
+                      "begin": 168,
+                      "offset": 4
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "question_area",
+            "children": [
+              {
+                "name": "paragraph",
+                "style": {
+                  "text_align": "left",
+                  "numbering": null
+                },
+                "children": [
+                  {
+                    "name": "chunk_ref",
+                    "type": "text_en",
+                    "chunk_id": 631173,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "choice_area",
+            "children": [
+              {
+                "name": "choice",
+                "number": 0,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631174,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 1,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631175,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 2,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631176,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 3,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631177,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": 6566,
+      "pack_type": "toeic-part6",
+      "passage_box_id": 34150,
+      "raw_fbid": "http://santa/question/325738",
+      "correct_answer": "d",
+      "order": 1,
+      "pack_id": 5088,
+      "view_tree": {
+        "name": "root",
+        "children": [
+          {
+            "name": "blank",
+            "children": [
+              {
+                "name": "chunk_ref",
+                "type": "text_en",
+                "chunk_id": 631168,
+                "children": [
+                  {
+                    "name": "segment",
+                    "data": {
+                      "begin": 140,
+                      "offset": 7
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "question_area",
+            "children": [
+              {
+                "name": "paragraph",
+                "style": {
+                  "text_align": "left",
+                  "numbering": null
+                },
+                "children": [
+                  {
+                    "name": "chunk_ref",
+                    "type": "text_en",
+                    "chunk_id": 631184,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "choice_area",
+            "children": [
+              {
+                "name": "choice",
+                "number": 0,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631185,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 1,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631186,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 2,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631187,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 3,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631188,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": 6567,
+      "pack_type": "toeic-part6",
+      "passage_box_id": 34150,
+      "raw_fbid": "http://santa/question/325740",
+      "correct_answer": "b",
+      "order": 2,
+      "pack_id": 5088,
+      "view_tree": {
+        "name": "root",
+        "children": [
+          {
+            "name": "blank",
+            "children": [
+              {
+                "name": "chunk_ref",
+                "type": "text_en",
+                "chunk_id": 631170,
+                "children": [
+                  {
+                    "name": "segment",
+                    "data": {
+                      "begin": 227,
+                      "offset": 10
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "question_area",
+            "children": [
+              {
+                "name": "paragraph",
+                "style": {
+                  "text_align": "left",
+                  "numbering": null
+                },
+                "children": [
+                  {
+                    "name": "chunk_ref",
+                    "type": "text_en",
+                    "chunk_id": 631195,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "choice_area",
+            "children": [
+              {
+                "name": "choice",
+                "number": 0,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631196,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 1,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631197,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 2,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631198,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 3,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631199,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "labels": []
+    },
+    {
+      "id": 6568,
+      "pack_type": "toeic-part6",
+      "passage_box_id": 34150,
+      "raw_fbid": "http://santa/question/325742",
+      "correct_answer": "b",
+      "order": 3,
+      "pack_id": 5088,
+      "view_tree": {
+        "name": "root",
+        "children": [
+          {
+            "name": "blank",
+            "children": [
+              {
+                "name": "chunk_ref",
+                "type": "text_en",
+                "chunk_id": 631172,
+                "children": [
+                  {
+                    "name": "segment",
+                    "data": {
+                      "begin": 85,
+                      "offset": 61
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "question_area",
+            "children": [
+              {
+                "name": "paragraph",
+                "style": {
+                  "text_align": "left",
+                  "numbering": null
+                },
+                "children": [
+                  {
+                    "name": "chunk_ref",
+                    "type": "text_en",
+                    "chunk_id": 631206,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "choice_area",
+            "children": [
+              {
+                "name": "choice",
+                "number": 0,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631207,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 1,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631208,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 2,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631209,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "choice",
+                "number": 3,
+                "children": [
+                  {
+                    "name": "paragraph",
+                    "style": {
+                      "text_align": "left",
+                      "numbering": null
+                    },
+                    "children": [
+                      {
+                        "name": "chunk_ref",
+                        "type": "text_en",
+                        "chunk_id": 631210,
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "labels": []
+    }
+  ],
+  "chunk_map": {
+    "631165": {
+      "id": 631165,
+      "text_en": "Questions %d-%d refer to the following article.",
+      "text_kr": null,
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": null
+    },
+    "631166": {
+      "id": 631166,
+      "text_en": "The long-awaited Pawnsville Cultural Center will be opening this March. The center was initially proposed 5 years ago by members of the city council and promises to be both a tourist attraction and somewhere to showcase local artistic talent. ",
+      "text_kr": "오랫동안 기다려온 Pawnsville 문화 센터가 오는 3월에 개관합니다. 이 센터는 2년 전에 시의회 의원들에 의해 처음으로 제안되었고, 관광 명소이자 지역 내 예술 인재들을 선보일 수 있는 곳이 될 것으로 보입니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631167": {
+      "id": 631167,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631168": {
+      "id": 631168,
+      "text_en": "The center will include two theaters as well as three exhibition halls. The grand opening will be held in the main exhibition hall and will feature the artwork of renowned local artist Philippe Lacoste.",
+      "text_kr": "이 센터는 3개의 전시회장뿐만 아니라 2개의 극장을 포함할 것입니다. 개장식은 중앙 전시회장에서 열릴 것이며 지역의 유명 예술가인 Philippe Lacoste의 예술 작품을 특집으로 선보일 것입니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631169": {
+      "id": 631169,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631170": {
+      "id": 631170,
+      "text_en": "Guests to the opening event will include other local artists and musicians as well as three special guest speakers set to lecture about the significance of conserving and sustaining the arts. The main exhibition hall boasts an impressive 500 seats and beautiful classical architecture.",
+      "text_kr": "개장 행사에 오시는 손님들 중에는 예술을 보존하고 지속시키는 것의 중요성에 관해 강연을 해주시기로 되어 있는 세 분의 특별 초청 연사들뿐만 아니라 지역의 다른 예술가들과 음악가들이 포함될 것입니다. 중앙 전시회장은 500석의 인상적인 좌석과 아름답고 고전적인 건축미를 자랑합니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631171": {
+      "id": 631171,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631172": {
+      "id": 631172,
+      "text_en": "To buy tickets for the event, head to the center’s Web site at www.pawnsarthall.org. Due to the popularity of the event, tickets are selling fast..",
+      "text_kr": "행사 입장권을 구입하시려면, 이 센터의 웹 사이트인 www.pawnsarthall.org로 찾아가 보시기 바랍니다. 이 행사의 인기로 인해, 표가 빠르게 판매되고 있습니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631173": {
+      "id": 631173,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631174": {
+      "id": 631174,
+      "text_en": "both",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631175": {
+      "id": 631175,
+      "text_en": "either",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631176": {
+      "id": 631176,
+      "text_en": "most",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631177": {
+      "id": 631177,
+      "text_en": "any",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631178": {
+      "id": 631178,
+      "text_en": null,
+      "text_kr": "1. 문맥상 적절한 대명사를 고르는 문제이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631179": {
+      "id": 631179,
+      "text_en": null,
+      "text_kr": "2. 빈칸 다음을 보면 두 개의 명사구가 ‘A and B’의 구조로 연결되어 있으므로 이와 같은 구조에 어울리는 (A)가 정답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631180": {
+      "id": 631180,
+      "text_en": null,
+      "text_kr": "(B) either는 ‘either A or B’의 구조로 쓰인다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631181": {
+      "id": 631181,
+      "text_en": null,
+      "text_kr": "(C) most는 형용사 또는 부사로 쓰이며, 빈칸 뒤에 위치한 부정 관사 a와 어순이 맞지 않는다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631182": {
+      "id": 631182,
+      "text_en": null,
+      "text_kr": "(D) any는 형용사나 대명사로 쓰이며, 마찬가지로 부정 관사 a와 어순이 맞지 않는다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631183": {
+      "id": 631183,
+      "text_en": null,
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631184": {
+      "id": 631184,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631185": {
+      "id": 631185,
+      "text_en": "admire",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631186": {
+      "id": 631186,
+      "text_en": "maintain",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631187": {
+      "id": 631187,
+      "text_en": "pledge",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631188": {
+      "id": 631188,
+      "text_en": "feature",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631189": {
+      "id": 631189,
+      "text_en": null,
+      "text_kr": "1. 문맥상 적절한 동사 어휘를 고르는 문제이다. ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631190": {
+      "id": 631190,
+      "text_en": null,
+      "text_kr": "2. 빈칸 뒤에 위치한 the artwork를 목적어로 취할 수 있는 동사로서, 개관식 행사에서 있을 일과 관련되어야 하므로 ‘~을 특징으로 하다’를 뜻하는 (D)가 정답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631191": {
+      "id": 631191,
+      "text_en": null,
+      "text_kr": "(A) admire (동사) ~을 감탄하며 바라보다, 존경하다",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631192": {
+      "id": 631192,
+      "text_en": null,
+      "text_kr": "(B) maintain (동사) ~을 유지하다 ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631193": {
+      "id": 631193,
+      "text_en": null,
+      "text_kr": "(C) pledge (동사) ~을 약속하다, 맹세하다",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631194": {
+      "id": 631194,
+      "text_en": null,
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631195": {
+      "id": 631195,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631196": {
+      "id": 631196,
+      "text_en": "effective",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631197": {
+      "id": 631197,
+      "text_en": "impressive",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631198": {
+      "id": 631198,
+      "text_en": "intriguing",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631199": {
+      "id": 631199,
+      "text_en": "optimistic",
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631200": {
+      "id": 631200,
+      "text_en": null,
+      "text_kr": "1. 문맥상 적절한 형용사 어휘를 고르는 문제이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631201": {
+      "id": 631201,
+      "text_en": null,
+      "text_kr": "2. 빈칸 뒤에 위치한 명사구는 동사 boasts의 목적어로서 건물의 특징에 해당되므로 이와 같은 특징과 어울리는 형용사로 ‘인상적인’을 뜻하는 (B)가 정답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631202": {
+      "id": 631202,
+      "text_en": null,
+      "text_kr": "(A) effective (형용사) 효과적인",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631203": {
+      "id": 631203,
+      "text_en": null,
+      "text_kr": "(C) intriguing (형용사) 아주 흥미로운, 호기심을 자극하는",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631204": {
+      "id": 631204,
+      "text_en": null,
+      "text_kr": "(D) optimistic (형용사) 낙관적인",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631205": {
+      "id": 631205,
+      "text_en": null,
+      "text_kr": "",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631206": {
+      "id": 631206,
+      "text_en": " ",
+      "text_kr": " ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631207": {
+      "id": 631207,
+      "text_en": "The speakers will be available afterwards for a meet and greet.",
+      "text_kr": "연사들은 나중에 만남의 자리에 참석할 시간이 있을 것입니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631208": {
+      "id": 631208,
+      "text_en": "Due to the popularity of the event, tickets are selling fast.",
+      "text_kr": "이 행사의 인기로 인해, 표가 빠르게 판매되고 있습니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631209": {
+      "id": 631209,
+      "text_en": "Visitors can stick around afterwards for a complimentary meal.",
+      "text_kr": "방문객들께서는 나중에 무료 식사를 위해 머무르실 수 있습니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631210": {
+      "id": 631210,
+      "text_en": "We are glad you’re showing interest in contributing to the arts.",
+      "text_kr": "저희는 여러분께서 예술에 기여하는 것에 관심을 보여주셔서 기쁩니다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631211": {
+      "id": 631211,
+      "text_en": null,
+      "text_kr": "1. 문맥상 적절한 문장을 고르는 문제이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631212": {
+      "id": 631212,
+      "text_en": null,
+      "text_kr": "2. 빈칸 앞에 행사 입장권 구매 방법이 언급되어 있으므로 입장권 구매와 관련된 내용으로서 빨리 구매하도록 권하는 의미로 쓰인 (B)가 정답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631213": {
+      "id": 631213,
+      "text_en": null,
+      "text_kr": "(A) 빈칸 앞 문장에 행사 입장권 구매 방법이 언급되어 있으므로 연사들을 만나는 일과 관련된 정보는 어울리지 않는다. ",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631214": {
+      "id": 631214,
+      "text_en": null,
+      "text_kr": "(C) 무료 식사와 관련된 단락이 아니므로 오답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631215": {
+      "id": 631215,
+      "text_en": null,
+      "text_kr": "(D) 예술에 기여하는 일과 관련된 내용 흐름이 아니므로 오답이다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    },
+    "631216": {
+      "id": 631216,
+      "text_en": null,
+      "text_kr": "문맥상 어울리는 문장 찾기는 빈칸 앞뒤의 내용에 힌트가 주로 나온다. 빈칸 앞뒤 문장을 통해 답을 유추할 수 있으므로 앞뒤 문장을 정확하게 해석해야 한다.",
+      "image_en": null,
+      "image_kr": null,
+      "sound_en": null,
+      "eqid": "325736,325738,325740,325742"
+    }
+  },
+  "passage_box": {
+    "id": 34150,
+    "view_tree": {
+      "name": "root",
+      "children": [
+        {
+          "name": "paragraph",
+          "style": {
+            "text_align": "left",
+            "numbering": null
+          },
+          "children": [
+            {
+              "name": "chunk_ref",
+              "type": "text_en",
+              "chunk_id": 631165,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "passages": [
+      {
+        "id": 36921,
+        "passage_box_id": 34150,
+        "type_of": "plain text",
+        "order": 0,
+        "view_tree": {
+          "name": "root",
+          "children": [
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631166,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "begin": 168,
+                        "offset": 4,
+                        "styles": [
+                          "blank"
+                        ]
+                      },
+                      "chunk_id": 631166,
+                      "order": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631167,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631168,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "begin": 140,
+                        "offset": 7,
+                        "styles": [
+                          "blank"
+                        ]
+                      },
+                      "chunk_id": 631168,
+                      "order": 2
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631169,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631170,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "begin": 227,
+                        "offset": 10,
+                        "styles": [
+                          "blank"
+                        ]
+                      },
+                      "chunk_id": 631170,
+                      "order": 3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631171,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_en",
+                  "chunk_id": 631172,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "begin": 85,
+                        "offset": 61,
+                        "styles": [
+                          "blank"
+                        ]
+                      },
+                      "chunk_id": 631172,
+                      "order": 4
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "speakers": []
+      }
+    ],
+    "passage_translations": [
+      {
+        "id": 36921,
+        "passage_id": 36921,
+        "type_of": "plain text",
+        "order": 0,
+        "view_tree": {
+          "name": "root",
+          "children": [
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631166,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 122,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    },
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 122,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631167,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631168,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 112,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    },
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 112,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631169,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631170,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 156,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    },
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 156,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631171,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "paragraph",
+              "style": {
+                "text_align": "left",
+                "numbering": null
+              },
+              "children": [
+                {
+                  "name": "chunk_ref",
+                  "type": "text_kr",
+                  "chunk_id": 631172,
+                  "children": [
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 0,
+                        "offset": 96,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    },
+                    {
+                      "name": "segment",
+                      "data": {
+                        "styles": [],
+                        "begin": 96,
+                        "offset": 0,
+                        "font_color": [
+                          0,
+                          0,
+                          0
+                        ],
+                        "font_size": 10,
+                        "font_name": "",
+                        "riiid_font_color": "black",
+                        "riiid_font_size": "m"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "vocabularies": [
+      {
+        "id": 214686,
+        "passage_id": 36921,
+        "word": "stick around",
+        "part_of_speech": "",
+        "meaning": "가지 않고 머무르다"
+      },
+      {
+        "id": 214683,
+        "passage_id": 36921,
+        "word": "meet and greet",
+        "part_of_speech": "",
+        "meaning": "만남의 자리, 팬미팅"
+      },
+      {
+        "id": 214680,
+        "passage_id": 36921,
+        "word": "head to",
+        "part_of_speech": "",
+        "meaning": "~로 가다"
+      },
+      {
+        "id": 214667,
+        "passage_id": 36921,
+        "word": "set to do",
+        "part_of_speech": "",
+        "meaning": "~하기로 되어 있는, ~할 예정인"
+      },
+      {
+        "id": 214658,
+        "passage_id": 36921,
+        "word": "as well as",
+        "part_of_speech": "",
+        "meaning": "~뿐만 아니라"
+      },
+      {
+        "id": 214652,
+        "passage_id": 36921,
+        "word": "both A and B",
+        "part_of_speech": "",
+        "meaning": "A와 B 둘 모두"
+      },
+      {
+        "id": 214651,
+        "passage_id": 36921,
+        "word": "promise to do",
+        "part_of_speech": "",
+        "meaning": "~할 것 같다, ~할 가망이 있다"
+      }
+    ],
+    "grid": {
+      "xs": 16,
+      "md": 10
+    }
+  }
+}

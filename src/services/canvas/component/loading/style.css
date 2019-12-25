@@ -1,0 +1,28 @@
+
+.loadingArea {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.textArea {
+    width: 70%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.textArea span {
+    color: #f8b26a;
+}
+
+.loadingArea img {
+    width: 10%;
+    height: auto;
+    margin-top: 200px;
+}
+
+@media (max-width: 680px) {
+    .loadingArea img {
+        width: 40%;
+    }
+}

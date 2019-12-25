@@ -1,0 +1,105 @@
+
+.toeicContainer {
+    width: 72%;
+    height: 100%;
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+}
+
+.toeicContainer .previewArea {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 4px solid #545454;
+    border-radius: 5px;
+}
+
+.toeicContainer .previewArea p {
+    color: #ffffff;
+}
+
+.toeicContainer .previewArea p span {
+    color: #71ff58;
+    font-weight: bold;
+}
+
+.toeicContainer .questionArea {
+    width: 50%;
+    float: left;
+    margin: 10px auto;
+}
+
+.toeicContainer .questionArea .question {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #545454;
+    border-radius: 5px;
+}
+
+.toeicContainer .vocaArea {
+    width: 100%;
+    float: left;
+    margin: 10px auto;
+}
+
+.toeicContainer .vocaArea .voca {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #545454;
+    border-radius: 5px;
+}
+
+.toeicContainer .questionArea .question .userCheck {
+    color: #ff9900;
+}
+.toeicContainer .questionArea .question .correctCheck {
+    color: #71ff58;
+    font-weight: bold;
+}
+.toeicContainer .questionArea .question .normalCheck {
+    color: #ffffff;
+}
+
+.oSign {
+    color: #71ff58;
+}
+.xSign {
+    color: #ff3535;
+}
+
+@media (max-width: 680px) {
+    .toeicContainer {
+        width: auto;
+    }
+    .toeicContainer .previewArea {
+        float: none;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 1px solid #545454;
+    }
+    .toeicContainer .questionArea {
+        float: none;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .toeicContainer .questionArea .question {
+        width: auto;
+    }
+
+    .toeicContainer .vocaArea {
+        float: none;
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .toeicContainer .vocaArea .voca {
+        width: auto;
+    }
+}

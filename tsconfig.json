@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "sourceMap": true, // map.js 파일도 함께 생성
+    "noImplicitAny": false, // any 사용 관련 에러 안내
+    "module": "commonjs", // 모듈 설정
+    "target": "es6", // 사용할 ECMAScript 버전 설정
+    "lib": [ // 컴파일에 포함될 라이브러리 파일 목록
+      "es2015",
+      "es2017",
+      "dom"
+    ],
+    "removeComments": true, // 주석 삭제
+    "allowSyntheticDefaultImports": false, // export default를 export한 값들을 가지는 객체로 설정
+    "jsx": "react", // jsx 지원
+    "allowJs": true, // 자바스크립트 파일 컴파일 허용 여부
+    "baseUrl": "./" // 기준 디렉토리 정보
+  }
+}

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36eea3b8-851e-4424-96b5-d46de6aff422" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="36eea3b8-851e-4424-96b5-d46de6aff422" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -211,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="356" />
     <option name="y" value="23" />
     <option name="width" value="1324" />
@@ -286,6 +284,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -342,15 +341,15 @@
       <workItem from="1576806612875" duration="1247000" />
       <workItem from="1576811544039" duration="52491000" />
       <workItem from="1576979511756" duration="91649000" />
-      <workItem from="1577271924418" duration="19065000" />
+      <workItem from="1577271924418" duration="19273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166237000" />
+    <option name="totallyTimeSpent" value="166445000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="356" y="23" width="1324" height="955" extended-state="0" />
+    <frame x="356" y="23" width="1324" height="955" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19570222" />

@@ -1,5 +1,6 @@
 
-import * as React from 'react'
+import * as React from 'react';
+import classNames from 'classnames';
 import {
     toeicContainer,
     previewArea,
@@ -12,14 +13,14 @@ import {
 } from "./style.css";
 
 // 공통으로 쓰이는 Util 함수들
-import Utils from '../../../utills/utils';
-import {ToeicPart6, ChooseData, QuestionsData, ChoiceArea} from "../../../../store/modules/toeicData";
+import { numberToABC } from '../../../utills/utils';
+import { ToeicPart6, Choice, QuestionsData } from "../../../../store/modules/toeicData";
 
 // Exam에서 시용하는 Redux 상태값 및 액션들
 interface Props {
     toeicPart6s: Array<ToeicPart6>,
-    chooseInfo: Array<ChooseData>,
-    updateChooseInfo(chooseInfo: Array<ChooseData>): void,
+    choiceList: Array<Choice>,
+    updateChooseInfo(qId: string, orderValue: string): void,
     changePageState(state: string): void
 }
 
@@ -39,30 +40,56 @@ interface Props {
 class Exam extends React.Component<Props, {}> {
 
     render() {
-        const { toeicPart6s, chooseInfo } = this.props;
+        const { toeicPart6s, choiceList } = this.props;
 
         return (
             <div className={toeicContainer}>
-                {this.renderToeicPart6(toeicPart6s, chooseInfo)}
+                {this.renderToeicPart6(toeicPart6s, choiceList)}
             </div>
         );
     }
 
-    renderToeicPart6 = (toeicPart6s: Array<ToeicPart6>, chooseInfo: Array<ChooseData>): React.ReactElement[] => {
+    renderToeicPart6 = (toeicPart6s: Array<ToeicPart6>, choiceList: Array<Choice>): React.ReactElement[] => {
 
         let html: React.ReactElement[] = [];
         for(let i=0; i<toeicPart6s.length; i++) {
             const preview = toeicPart6s[i].preview;
 
             html[i] = (
-                <div>
+                <div key={'q-' + i}>
                     <h1>Part6</h1>
                     <h2>Questions 1 - 4</h2>
                     <div className={previewArea}>{this.cleanText(preview)}</div>
-                    {this.renderQuestions(toeicPart6s[i].questions)}
+                    {
+                        toeicPart6s[i].questions.map((item, index) => {
+                            return (
+                                <React.Fragment key={'fragment_' + index}>
+                                    <div className={questionArea} key={'questions_' + index}>
+                                        <div className={question}>
+                                            <p><b>{item.order + 1}.</b></p>
+                                            {
+                                                item.choiceArea.map((choiceArea, index2) => {
+                                                    let html: React.ReactElement[] = [];
+                                                    const activeObject = [];
+                                                    activeObject[active] = this.isChooseArea(item.id, choiceArea.number);
 
+                                                    html.push((
+                                                        <p key={'choiceArea_' + index + '_' + index2} className={classNames(interest, activeObject)}
+                                                           onClick={() => this.checkAnswer(item.id, numberToABC(choiceArea.number))}>
+                                                            {'(' + numberToABC(choiceArea.number) + ')'} {choiceArea.numberValue}
+                                                        </p>
+                                                    ));
+                                                    return html;
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                </React.Fragment>
+                            )
+                        })
+                    }
                     <div className={buttonArea}>
-                        <button onClick={() => {this.checkSubmit(chooseInfo)}} className={button}><span>채점하기</span></button>
+                        <button onClick={() => {this.checkSubmit(choiceList)}} className={button}><span>채점하기</span></button>
                     </div>
                 </div>
             );
@@ -76,10 +103,24 @@ class Exam extends React.Component<Props, {}> {
         for(let i=0; i<questions.length; i++) {
 
             html[i] = (
-                <div className={questionArea}>
+                <div className={questionArea} key={'questions_' + i}>
                     <div className={question}>
                         <p><b>{questions[i].order + 1}.</b></p>
-                        {this.renderChoiceAnswer(questions[i].id, questions[i].choiceArea)}
+                        {
+                            questions[i].choiceArea.map(choiceArea => {
+                                let html: React.ReactElement[] = [];
+                                const activeObject = [];
+                                activeObject[active] = this.isChooseArea(questions[i].id, choiceArea.number);
+
+                                html.push((
+                                    <p key={'choiceArea_' + i} className={classNames(interest, activeObject)}
+                                       onClick={() => this.checkAnswer(questions[i].id, numberToABC(choiceArea.number))}>
+                                        {'(' + numberToABC(choiceArea.number) + ')'} {choiceArea.numberValue}
+                                    </p>
+                                ));
+                                return html;
+                            })
+                        }
                     </div>
                 </div>
             );
@@ -87,71 +128,20 @@ class Exam extends React.Component<Props, {}> {
         return html;
     };
 
-    renderChoiceAnswer = (qId: string, choiceArea: Array<ChoiceArea>): React.ReactElement[] => {
-
-        let html: React.ReactElement[] = [];
-        for(let i=0; i<choiceArea.length; i++) {
-            html[i] = (
-                <p className={this.isChooseArea(qId, choiceArea[i].number) ? interest + ' ' + active : interest}
-                    onClick={() => this.checkAnswer(qId, choiceArea[i].number)}>
-                    {Utils.numberToABC(choiceArea[i].number, 'P')} {choiceArea[i].numberValue}
-                </p>
-            );
-        }
-        return html;
+    checkAnswer = (qId: string, orderValue: string): void => {
+        this.props.updateChooseInfo(qId, orderValue);
     };
 
-    checkAnswer = (qId: string, num: string): void => {
-        const { chooseInfo } = this.props;
-        let index = 0;
-        const tempChooseInfo: Array<ChooseData> = [];
-        let chooseData: ChooseData = {
-            click: false,
-            qId: '',
-            chooseAnswer: '',
-            correctAnswer: '',
-            studyNode: '',
-            answerValue: ''
-        };
+    checkSubmit = (choiceList: Array<Choice>): void => {
 
-        for(let i=0; i<chooseInfo.length; i++) {
-
-            chooseData = {
-                click: false,
-                qId: '',
-                chooseAnswer: '',
-                correctAnswer: '',
-                studyNode: '',
-                answerValue: ''
-            };
-
-            if(qId === chooseInfo[i].qId) {
-                chooseData.click = true;
-                chooseData.chooseAnswer = Utils.numberToABC(num, '');
-            } else {
-                chooseData.click = false;
-                chooseData.chooseAnswer = chooseInfo[i].chooseAnswer;
-            }
-            chooseData.qId = chooseInfo[i].qId;
-            chooseData.correctAnswer = chooseInfo[i].correctAnswer;
-            chooseData.studyNode = chooseInfo[i].studyNode;
-            chooseData.answerValue = chooseInfo[i].answerValue;
-
-            tempChooseInfo[index++] = chooseData;
-        }
-        this.props.updateChooseInfo(tempChooseInfo);
-    };
-
-    checkSubmit = (chooseInfo: Array<ChooseData>): void => {
-
-        let check = false;
-        for(let i=0; i<chooseInfo.length; i++) {
-            if(chooseInfo[i].chooseAnswer === '') {
-                check = true;
+        let isValid = false;
+        for(let i=0; i<choiceList.length; i++) {
+            if(choiceList[i].chooseAnswer === '') {
+                isValid = true;
             }
         }
 
-        if(check) {
+        if(isValid) {
             alert('몰라도 다 푸세염 ! ^^');
         } else {
             this.props.changePageState('loading');
@@ -160,10 +150,10 @@ class Exam extends React.Component<Props, {}> {
 
     isChooseArea = (qId: string, num: string): boolean => {
         let result = false;
-        const { chooseInfo } = this.props;
-        for(let i=0; i<chooseInfo.length; i++) {
-            if(qId === chooseInfo[i].qId) {
-                result = Utils.numberToABC(num, '') === chooseInfo[i].chooseAnswer;
+        const { choiceList } = this.props;
+        for(let i=0; i<choiceList.length; i++) {
+            if(qId === choiceList[i].qId) {
+                result = numberToABC(num) === choiceList[i].chooseAnswer;
             }
         }
         return result;
@@ -182,7 +172,7 @@ class Exam extends React.Component<Props, {}> {
                 const blankText = text.split('_______');
                 const blankMark = '___' + '(' + number++ + ')' + '___';
                 const blankArea: React.ReactElement = (
-                    <p>
+                    <p key={"t_" + i}>
                         {blankText[0]}
                         <span>{blankMark}</span>
                         {blankText[1]}
@@ -190,7 +180,7 @@ class Exam extends React.Component<Props, {}> {
                 );
                 cleanText[i] = (blankArea);
             } else {
-                cleanText[i] = (<p>{text}</p>);
+                cleanText[i] = (<p key={"t_" + i}>{text}</p>);
             }
         }
 

@@ -15,13 +15,13 @@ import {
 } from "./style.css";
 
 // 공통으로 쓰이는 Util 함수들
-import Utils from '../../../utills/utils';
-import {ChoiceArea, ChooseData, QuestionsData, ToeicPart6, Voca} from "../../../../store/modules/toeicData";
+import { numberToABC } from '../../../utills/utils';
+import {ChoiceArea, Choice, QuestionsData, ToeicPart6, Voca} from "../../../../store/modules/toeicData";
 
 // Exam에서 시용하는 Redux 상태값 및 액션들
 interface Props {
     toeicPart6s: Array<ToeicPart6>,
-    chooseInfo: Array<ChooseData>
+    choiceList: Array<Choice>
 }
 
 /**
@@ -40,27 +40,27 @@ interface Props {
 class Result extends React.Component<Props, {}> {
 
     render() {
-        const { toeicPart6s, chooseInfo } = this.props;
+        const { toeicPart6s, choiceList } = this.props;
 
         return (
             <div className={toeicContainer}>
-                {this.renderResultPage(toeicPart6s, chooseInfo)}
+                {this.renderResultPage(toeicPart6s, choiceList)}
             </div>
         );
     }
 
-    renderResultPage = (toeicPart6s: Array<ToeicPart6>, chooseInfo: Array<ChooseData>): React.ReactElement[] => {
+    renderResultPage = (toeicPart6s: Array<ToeicPart6>, choiceList: Array<Choice>): React.ReactElement[] => {
 
         let html: React.ReactElement[] = [];
 
         for(let i=0; i<toeicPart6s.length; i++) {
 
             html[i] = (
-                <div>
+                <div key={'r-' + i}>
                     <h1>Part6</h1>
-                    <h2>채점 결과 : {this.result(chooseInfo)}</h2>
-                    <div className={previewArea}>{this.studyNote(chooseInfo)}</div>
-                    {this.renderQuestions(toeicPart6s[i].questions, chooseInfo)}
+                    <h2>채점 결과 : {this.result(choiceList)}</h2>
+                    <div className={previewArea}>{this.studyNote(choiceList)}</div>
+                    {this.renderQuestions(toeicPart6s[i].questions, choiceList)}
                     <div className={vocaArea}>
                         <div className={voca}>
                             {this.vocaArea(toeicPart6s[i].voca)}
@@ -72,42 +72,41 @@ class Result extends React.Component<Props, {}> {
         return html;
     };
 
-    studyNote = (chooseInfo: Array<ChooseData>): React.ReactElement[] => {
+    studyNote = (choiceList: Array<Choice>): React.ReactElement[] => {
         let index = 0;
         let html: React.ReactElement[] = [];
-        for(let i=0; i<chooseInfo.length; i++) {
-            const s = chooseInfo[i].studyNode.split('\\n');
-            console.log(i + '  ' + chooseInfo[i].answerValue);
+        for(let i=0; i<choiceList.length; i++) {
+            const s = choiceList[i].studyNode.split('\\n');
             for(let j=0; j<s.length; j++) {
                 let text = s[j];
-                if(text.includes(chooseInfo[i].answerValue)) {
-                    const normalText = text.split(chooseInfo[i].answerValue);
+                if(text.includes(choiceList[i].answerValue)) {
+                    const normalText = text.split(choiceList[i].answerValue);
                     const blankArea: React.ReactElement = (
-                        <p>
+                        <p key={'r-c-' + i + '-' + j}>
                             {normalText[0]}
-                            <span>{chooseInfo[i].answerValue}</span>
+                            <span>{choiceList[i].answerValue}</span>
                             {normalText[1]}
                         </p>
                     );
                     html[index++] = (blankArea);
                 } else {
-                    html[index++] = (<p>{text}</p>);
+                    html[index++] = (<p key={'r-c-' + i + '-' + j}>{text}</p>);
                 }
             }
         }
         return html;
     };
 
-    renderQuestions = (questions: Array<QuestionsData>, chooseInfo: Array<ChooseData>): React.ReactElement[] => {
+    renderQuestions = (questions: Array<QuestionsData>, choiceList: Array<Choice>): React.ReactElement[] => {
 
         let html: React.ReactElement[] = [];
         for(let i=0; i<questions.length; i++) {
 
             html[i] = (
-                <div className={questionArea}>
+                <div key={'r-q-' + i} className={questionArea}>
                     <div className={question}>
-                        {this.oxSign(Number(questions[i].order) + 1, questions[i].id, questions[i].correctAnswer, chooseInfo)}
-                        {this.renderChoiceAnswer(questions[i].id ,questions[i].choiceArea, chooseInfo)}
+                        {this.oxSign(Number(questions[i].order) + 1, questions[i].id, questions[i].correctAnswer, choiceList)}
+                        {this.renderChoiceAnswer(questions[i].id ,questions[i].choiceArea, choiceList)}
                     </div>
                 </div>
             );
@@ -115,25 +114,25 @@ class Result extends React.Component<Props, {}> {
         return html;
     };
 
-    renderChoiceAnswer = (qId: string, choiceArea: Array<ChoiceArea>, chooseInfo: Array<ChooseData>): React.ReactElement[] => {
+    renderChoiceAnswer = (qId: string, choiceArea: Array<ChoiceArea>, choiceList: Array<Choice>): React.ReactElement[] => {
 
         let html: React.ReactElement[] = [];
         for(let i=0; i<choiceArea.length; i++) {
 
             let state = '';
-            const view = Utils.numberToABC(choiceArea[i].number, '');
-            for(let j=0; j<chooseInfo.length; j++) {
-                if(qId === chooseInfo[j].qId) {
-                    if(chooseInfo[j].chooseAnswer === chooseInfo[j].correctAnswer) {
-                        if(view === chooseInfo[j].correctAnswer) {
+            const view = numberToABC(choiceArea[i].number);
+            for(let j=0; j<choiceList.length; j++) {
+                if(qId === choiceList[j].qId) {
+                    if(choiceList[j].chooseAnswer === choiceList[j].correctAnswer) {
+                        if(view === choiceList[j].correctAnswer) {
                             state = 'cc';
                         } else {
                             state = 'nc';
                         }
                     } else {
-                        if(view === chooseInfo[j].correctAnswer) {
+                        if(view === choiceList[j].correctAnswer) {
                             state = 'cc';
-                        } else if(view === chooseInfo[j].chooseAnswer) {
+                        } else if(view === choiceList[j].chooseAnswer) {
                             state = 'uc';
                         } else {
                             state = 'nc';
@@ -141,32 +140,32 @@ class Result extends React.Component<Props, {}> {
                     }
                 }
             }
-            html[i] = (<p className={state === 'uc' ? userCheck : state === 'cc' ? correctCheck : normalCheck}>{Utils.numberToABC(choiceArea[i].number, 'P')} {choiceArea[i].numberValue}</p>);
+            html[i] = (<p key={'r-c-s-' + i} className={state === 'uc' ? userCheck : state === 'cc' ? correctCheck : normalCheck}>{'(' + numberToABC(choiceArea[i].number) + ')'} {choiceArea[i].numberValue}</p>);
         }
         return html;
     };
 
-    result = (chooseInfo: Array<ChooseData>): string => {
+    result = (choiceList: Array<Choice>): string => {
 
         let info;
         let answerCnt = 0;
-        for(let i=0; i<chooseInfo.length; i++) {
-            if(chooseInfo[i].chooseAnswer === chooseInfo[i].correctAnswer) {
+        for(let i=0; i<choiceList.length; i++) {
+            if(choiceList[i].chooseAnswer === choiceList[i].correctAnswer) {
                 answerCnt++;
             }
         }
-        info = '총 ' + chooseInfo.length + '문제 중에 ' + answerCnt + '문제 맞추셨습니다. ' + '(정답률 : ' + answerCnt/chooseInfo.length*100 + '%)';
+        info = '총 ' + choiceList.length + '문제 중에 ' + answerCnt + '문제 맞추셨습니다. ' + '(정답률 : ' + answerCnt/choiceList.length*100 + '%)';
         return info;
     };
 
-    oxSign = (number: number, qId: string, correctAnswer: string, chooseInfo: Array<ChooseData>): React.ReactElement => {
+    oxSign = (number: number, qId: string, correctAnswer: string, choiceList: Array<Choice>): React.ReactElement => {
 
         let html: React.ReactElement;
-        for(let i=0; i<chooseInfo.length; i++) {
-            if(qId === chooseInfo[i].qId && correctAnswer === chooseInfo[i].chooseAnswer) {
-                return html = (<p className={oSign}><b>{number}. 정답입니다!</b></p>);
+        for(let i=0; i<choiceList.length; i++) {
+            if(qId === choiceList[i].qId && correctAnswer === choiceList[i].chooseAnswer) {
+                return html = (<p key={'ox-' + i} className={oSign}><b>{number}. 정답입니다!</b></p>);
             } else {
-                html = (<p className={xSign}><b>{number}. 틀렸습니다.</b></p>);
+                html = (<p key={'ox-' + i} className={xSign}><b>{number}. 틀렸습니다.</b></p>);
             }
         }
         return html;
@@ -177,7 +176,7 @@ class Result extends React.Component<Props, {}> {
         let html: React.ReactElement[] = [];
         for(let i=0; i<voca.length; i++) {
             html[i] = (
-                <p>{voca[i].word} : {voca[i].meaning}</p>
+                <p key={'v-' + i}>{voca[i].word} : {voca[i].meaning}</p>
             );
         }
         return html;

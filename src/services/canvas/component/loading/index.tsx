@@ -23,12 +23,6 @@ class Loading extends React.Component<Props, {}> {
             </div>
         );
     }
-
-    componentDidMount() {
-        setTimeout(() => {
-            this.props.changePageState('result');
-        }, 1000);
-    }
 }
 
 export default Loading;

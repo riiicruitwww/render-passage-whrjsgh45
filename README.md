@@ -15,7 +15,17 @@ $ npm install
 $ npm run build
 ```
 
-- Server Start
+- Server Start Dev
 ```
-$ npm run serve
+$ npm run start:dev
+```
+
+- Server Start light
+```
+$ npm run start:light
+```
+
+- Server Start forever (daemon)
+```
+$ npm run start:forever
 ```
